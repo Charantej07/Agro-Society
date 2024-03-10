@@ -9,55 +9,70 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../Images/Farming small.png" />
   </head>
 
   <body>
     <header
-      class="fixed z-50 flex w-screen items-center justify-between bg-agro-500 shadow-xl"
+      class="fixed z-10 flex w-screen items-center justify-between bg-agro-500 px-10 py-7 shadow-xl"
     >
-      <div class="pl-10 text-xl font-bold uppercase text-white">
+      <div class="px-5 text-xl font-bold uppercase text-white">
         <a href="#">Agro Society</a>
       </div>
-      <nav>
+      <nav class="pr-5">
         <ul
-          class="flex h-20 items-center justify-end space-x-20 pr-10 text-lg font-semibold text-white"
+          class="flexx-1 flex items-center justify-center gap-16 text-lg font-semibold text-white max-md:hidden"
         >
-          <li></li>
           <li><a href="#">Home</a></li>
           <li><a href="#">About us</a></li>
           <li><a href="#">Reviews</a></li>
           <li><a href="#">Contact us</a></li>
         </ul>
       </nav>
+      <div class="md:hidden">
+        <i class="ri-menu-line text-white"></i>
+      </div>
     </header>
     <main>
       <div
-        class="flex h-screen items-center bg-gradient-to-tr from-agro-500 via-agro-300 to-yellow-200 pt-20"
+        class="flex h-auto min-h-screen flex-col items-center justify-center gap-4 bg-gradient-to-tr from-agro-500 via-agro-300 to-yellow-200 pt-[104px] md:flex-row md:items-center md:justify-center"
       >
-        <div class="flex w-1/2 flex-col gap-5 pl-16 pr-16 text-white">
+        <div
+          class="flex w-1/2 flex-col gap-5 pl-16 pr-16 text-white max-md:w-screen"
+        >
           <h4 class="text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h4>
-          <h1 class="pb-3 text-5xl font-bold uppercase">Lorem, ipsum.</h1>
-          <p class="text-lg">
+          <h1
+            class="pb-3 text-5xl font-bold uppercase max-md:text-3xl max-[430px]:text-2xl max-[300px]:text-xl"
+          >
+            Lorem, ipsum.
+          </h1>
+          <p class="text-lg max-md:text-base max-[300px]:text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Perferendis, necessitatibus nesciunt. Excepturi hic odio, magnam
             dolorum eum enim. Quod, officiis.
           </p>
-          <div class="mt-4 flex gap-4">
+          <div
+            class="mt-4 flex flex-col gap-4 max-md:flex-row max-[430px]:flex-col lg:flex-row"
+          >
             <button
-              class="rounded-2xl bg-yellow-500 px-5 py-3 text-lg font-semibold text-white hover:bg-white hover:text-yellow-500"
+              class="rounded-2xl bg-yellow-500 px-5 py-3 text-lg font-semibold text-white hover:bg-white hover:text-yellow-500 max-md:text-base max-[300px]:text-sm"
             >
               Contact Us
             </button>
             <button
-              class="rounded-2xl border-2 border-solid border-yellow-500 px-5 py-3 text-lg font-semibold text-white hover:font-bold"
+              class="rounded-2xl border-2 border-solid border-yellow-500 px-5 py-3 text-lg font-semibold text-white hover:font-bold max-md:text-base max-[300px]:text-sm"
             >
               Buy Products <i class="ri-shopping-cart-2-line"></i>
             </button>
           </div>
         </div>
-        <div class="w-2/5">
+        <div class="w-2/5 max-md:w-[300px]">
           <img
             class="drop-shadow-xl"
             src="../Images/Farming small.png"
@@ -65,8 +80,8 @@
           />
         </div>
       </div>
-      <div class="h-screen bg-white pb-24 pt-20 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="h-auto min-h-screen bg-white pb-24 pt-20 sm:py-32">
+        <div class="mx-auto max-w-7xl px-16 lg:px-8">
           <div class="mx-auto max-w-2xl lg:text-center">
             <p
               class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
@@ -184,7 +199,7 @@
       </div>
     </main>
     <footer
-      class="relative bg-gradient-to-tr from-agro-500 via-agro-300 to-yellow-200 pb-6 pt-8 text-agro-600"
+      class="bg-gradient-to-tr from-agro-500 via-agro-300 to-yellow-200 pb-6 pt-8 text-agro-600"
     >
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap text-left lg:text-left">
