@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../../input.css" />
+  </head>
+  <body class="bg-gradient-to-t from-agro-500 via-agro-300 to-yellow-200">
+    <header class="fixed left-0 top-0 z-10 flex w-full justify-center">
+      <a
+        href="../LandingPage/index.html"
+        class="py-4 text-3xl font-bold uppercase text-agro-600"
+        >Agro Society</a
+      >
+    </header>
+    <div
+      class="relative flex h-screen flex-1 items-center justify-center overflow-hidden"
+    >
+      <div
+        class="circle absolute left-1/2 top-12 h-[20vw] w-[20vw] translate-x-24 translate-y-6 shadow-md lg:translate-x-12 xl:h-[15vw] xl:w-[15vw]"
+      ></div>
+      <div
+        class="circle absolute -bottom-36 -left-24 h-[40vw] w-[40vw] -translate-y-16 translate-x-8 shadow-md blur-sm md:-translate-y-4 md:translate-x-6 lg:translate-x-0 xl:-translate-x-6 xl:translate-y-0"
+      ></div>
+      <div
+        class="circle absolute bottom-16 right-10 z-20 h-[13vw] w-[13vw] -translate-y-4 shadow-md xl:h-[10vw] xl:w-[10vw] xl:-translate-x-12"
+      ></div>
+      <div class="glass w-auto rounded-3xl p-8 shadow-md">
+        <h2 class="mb-4 text-2xl font-bold">Login</h2>
+        <form>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-black"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              class="mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block text-sm font-medium text-black"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Your Password"
+              class="mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm"
+            />
+          </div>
+          <div
+            class="mb-4 flex items-center justify-between gap-4 max-[338px]:flex-col max-[338px]:items-start max-[338px]:gap-1"
+          >
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="remember_me"
+                name="remember_me"
+                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+              />
+              <label
+                for="remember_me"
+                class="ml-2 block whitespace-nowrap text-sm text-gray-900"
+                >Remember me</label
+              >
+            </div>
+            <a
+              href="#"
+              class="whitespace-nowrap text-sm font-bold text-agro-400 hover:text-agro-600"
+              >Forgot password?</a
+            >
+          </div>
+          <div class="mb-2">
+            <button
+              type="submit"
+              class="w-full rounded-md bg-agro-500 px-4 py-2 text-white hover:bg-agro-600 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+            >
+              Login
+            </button>
+          </div>
+          <div class="my-2 text-center">
+            <p>or</p>
+          </div>
+          <div class="mb-2">
+            <button
+              type="button"
+              class="w-full rounded-md bg-white px-4 py-2 text-black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-agro-500 focus:ring-offset-2"
+            >
+              Login with Google
+              <img src="../Images/google.png" alt="google" class="inline w-5" />
+            </button>
+          </div>
+        </form>
+        <p class="mt-4 text-sm">
+          Don't have an account?
+          <a href="#" class="font-bold text-agro-400 hover:text-agro-600"
+            >Sign up</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
