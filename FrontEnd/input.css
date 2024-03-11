@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .glass {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .circle {
+    border-radius: 50%;
+    background: linear-gradient(90deg, #3c5a14, #669d31, #fde68a);
+  }
+}
