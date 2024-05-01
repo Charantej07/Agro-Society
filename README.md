@@ -1,114 +1,52 @@
-# MERN Ecommerce
+# Agro Society
 
 ## Description
 
-An ecommerce store built with MERN stack, and utilizes third party API's. This ecommerce store enable three main different flows or implementations:
+Agro Society is a comprehensive platform designed to revolutionize the agricultural ecosystem by seamlessly connecting farmers, workers, and users in a digital marketplace. This platform aims to empower farmers with effective cultivation methods, real-time weather reports, fair pricing mechanisms, and access to a broader market for their agricultural products. Users can browse and purchase fresh produce directly from farmers, while workers facilitate the logistics of order fulfillment and delivery.
 
-1. Buyers browse the store categories, products and brands
-2. Sellers or Merchants manage their own brand component
-3. Admins manage and control the entire store components 
+## Features
 
+- **Weather Integration:** Farmers can access real-time weather forecasts to plan their agricultural activities effectively.
+- **Product Listings:** Farmers can list their agricultural products for sale, allowing users to browse and purchase fresh produce directly from the source.
+- **Order Management:** Users can place orders for agricultural products, track order statuses, and receive timely updates on delivery.
+- **User Authentication:** Secure authentication mechanisms ensure that only authorized users can access the platform and perform actions.
+- **Feedback System:** Farmers and users can provide feedback on their experiences, helping improve the platform's functionality and usability.
 
-* features:
-  * Node provides the backend environment for this application
-  * Express middleware is used to handle requests, routes
-  * Mongoose schemas to model the application data
-  * React for displaying UI components
-  * Redux to manage application's state
-  * Redux Thunk middleware to handle asynchronous redux actions
+## Technologies Used
+
+### Frontend:
+- **React.js:** JavaScript library for building user interfaces.
+- **Redux:** State management library for managing application state.
+- **HTML5 & CSS3:** Standard markup and styling languages for structuring and designing the frontend interface.
+- **Sass:** CSS preprocessor for enhanced styling capabilities and maintainability.
+- **Axios:** Promise-based HTTP client for making asynchronous requests to the backend server.
+
+### Backend:
+- **Node.js:** Runtime environment for executing JavaScript code outside the browser.
+- **Express.js:** Web framework for building web applications and APIs.
+- **MongoDB:** NoSQL database for storing flexible and scalable data.
+- **Mongoose:** ODM library for modeling application data and interacting with MongoDB.
+- **JWT (JSON Web Tokens):** Secure token-based authentication mechanism for user authentication.
+- **Express Validator:** Middleware for robust input validation and sanitation of user input.
 
 ## Quickstart Guide
 
-To run this project locally you can use docker compose provided in the repository. Here is a guide on how to run this project locally using docker compose.
+To run this project locally, follow these steps:
 
-Clone the repository
-```
-$ git clone https://github.com/mohamedsamara/mern-ecommerce.git
-```
+1. Clone the repository:
+$ git clone https://github.com/Charantej07/Agro-Society
 
-Edit the dockercompose.yml file and update the the values for MONGO_URI and JWT_SECRET
+2. Navigate to the project directory:
+$ cd Agro-Society
 
-Then simply start the docker compose:
-```
-$ docker compose -f dockercompose.yml up
-```
-
-## Database Seed
-
-* The seed command will create an admin user in the database
-* The email and password are passed with the command as arguments
-* Like below command, replace brackets with email and password. 
-* For more information, see code [here](server/utils/seed.js)
-
-```
-npm run seed:db [email-***@****.com] [password-******] // This is just an example.
-```
-
-## Demo
-
-This application is deployed on Vercel Please check it out :smile: [here](https://mern-store-gold.vercel.app).
-
-See admin dashboard [demo](https://mernstore-bucket.s3.us-east-2.amazonaws.com/admin.mp4)
-
-## Install
-
-Some basic Git commands are:
-
-```
-$ git clone https://github.com/mohamedsamara/mern-ecommerce.git
-$ cd project
+3. Install dependencies:
 $ npm install
-```
 
-## Start development
-
-```
+4. Start the development server:
 $ npm run dev
-```
 
-## Simple build for production
+To create an admin
 
-```
-$ npm run build
-```
-
-## Run build for production
-
-```
-$ npm start
-```
-
-
-## Languages & tools
-
-- [Node](https://nodejs.org/en/)
-
-- [Express](https://expressjs.com/)
-
-- [Mongoose](https://mongoosejs.com/)
-
-- [React](https://reactjs.org/)
-
-- [Webpack](https://webpack.js.org/)
-
-
-### Code Formatter
-
-- Add a `.vscode` directory
-- Create a file `settings.json` inside `.vscode`
-- Install Prettier - Code formatter in VSCode
-- Add the following snippet:  
-
-```json
-
-    {
-      "editor.formatOnSave": true,
-      "prettier.singleQuote": true,
-      "prettier.arrowParens": "avoid",
-      "prettier.jsxSingleQuote": true,
-      "prettier.trailingComma": "none",
-      "javascript.preferences.quoteStyle": "single",
-    }
-
-```
+1. Run the seed command:
+$ npm run seed:db [email] [password]
 
