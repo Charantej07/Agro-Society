@@ -34,7 +34,9 @@ Agro Society is a comprehensive platform designed to revolutionize the agricultu
 To run this project locally, follow these steps:
 
 1. Clone the repository:
+```
 $ git clone https://github.com/Charantej07/Agro-Society
+```
 
 2. Navigate to the project directory:
 $ cd Agro-Society
