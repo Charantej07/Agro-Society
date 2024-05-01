@@ -39,16 +39,23 @@ $ git clone https://github.com/Charantej07/Agro-Society
 ```
 
 2. Navigate to the project directory:
+```
 $ cd Agro-Society
+```
 
 3. Install dependencies:
+```
 $ npm install
+```
 
 4. Start the development server:
+```
 $ npm run dev
+```
 
 To create an admin
 
 1. Run the seed command:
+```
 $ npm run seed:db [email] [password]
-
+```
